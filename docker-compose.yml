@@ -8,6 +8,7 @@ web:
     - db
   environment:
     PORT: 3000
+    DB_LINK: db_1
 db:
   image: mongo
   ports:
