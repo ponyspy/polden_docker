@@ -1,6 +1,5 @@
 web:
   build: ./app
-  # command: node app.js
   volumes:
     - "./app/polden:/src/polden"
   ports:
