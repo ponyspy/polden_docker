@@ -8,7 +8,6 @@ web:
     - db
   environment:
     PORT: 3000
-
 db:
   image: mongo
   ports:
