@@ -1,0 +1,17 @@
+web:
+  build: ./app
+  # command: node app.js
+  volumes:
+    - "./app/polden:/src/polden"
+  ports:
+    - "3000:3000"
+  links:
+    - db
+  environment:
+    PORT: 3000
+
+db:
+  image: mongo
+  ports:
+    - "27017:27017"
+  command: "--smallfiles --logpath=/dev/null"
